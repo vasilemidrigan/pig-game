@@ -1,0 +1,107 @@
+/* Variables */
+:root {
+  /*Colors*/
+  --blue-active-color: #8ea6c0;
+  --blue-light-color: #6d8299;
+  --blue-dark-color: #316b83;
+  --white-color: #fff;
+}
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+h2 {
+  font-size: 2em;
+  display: inlin-block;
+}
+p {
+  font-size: 25px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#aa4b6b, #6b6b83, #3b8d99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Main */
+main {
+  background-color: var(--blue-light-color);
+  opacity: 0.5;
+  width: 90vw;
+  height: 95vh;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0px 0px 20px var(--white-color);
+  overflow: hidden;
+}
+/* Players - 2 sections */
+section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+/* Active player */
+.player--active {
+  background-color: var(--blue-active-color);
+}
+/* Inactive states */
+.button--inactive {
+  display: none;
+}
+/* Winner player */
+.player--winner {
+  background-color: yellow;
+}
+/* Total scores */
+.score {
+  font-size: 4em;
+}
+/* Current scores */
+.current {
+  margin: 0 auto;
+  background-color: lightskyblue;
+  width: 25%;
+  height: 20%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Dice */
+.dice {
+  background-color: var(--white-color);
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Buttons */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.btn--new {
+  top: 10%;
+}
+.btn--roll {
+  top: 70%;
+}
+.btn--hold {
+  top: 80%;
+}
