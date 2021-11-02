@@ -14,17 +14,17 @@
   font-family: "PT Sans", sans-serif;
 }
 body {
-  background: linear-gradient(#8a2387, #e94057, #f27121);
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#8a2387, #e94057, #f27121);
 }
 h2 {
-  color: var(--white-color);
-  font-size: 2em;
   display: inlin-block;
+  font-size: 2em;
+  color: var(--white-color);
 }
 p {
   font-size: 25px;
@@ -38,14 +38,14 @@ button {
 }
 /* Main */
 main {
-  background-color: var(--blue-light-color);
-  box-shadow: 0px 0px 10px var(--white-color);
-  border-radius: 10px;
-  overflow: hidden;
   display: flex;
   width: 90vw;
   height: 95vh;
+  overflow: hidden;
   opacity: 0.8;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--white-color);
+  background-color: var(--blue-light-color);
 }
 /* Players - 2 sections */
 section {
@@ -69,14 +69,11 @@ section {
 }
 /* Total scores */
 .score {
-  color: var(--white-color);
   font-size: 4em;
+  color: var(--white-color);
 }
 /* Current scores */
 .current {
-  background-color: var(--white-color);
-  box-shadow: 0px 0px 10px var(--white-color);
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,27 +81,30 @@ section {
   margin: 0 auto;
   width: 25%;
   height: 20%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--white-color);
+  background-color: var(--white-color);
 }
 /* Dice */
 .dice {
-  background-color: var(--white-color);
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
   position: absolute;
   top: 30%;
   left: 50%;
   width: 100px;
   height: 100px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background-color: var(--white-color);
 }
 /* Buttons */
 .btn {
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  font-size: 20px;
   position: absolute;
   left: 50%;
   width: 10%;
   height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
 }
 .btn--new {
   top: 10%;
