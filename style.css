@@ -14,16 +14,24 @@
   font-family: "PT Sans", sans-serif;
 }
 h2 {
+  color: var(--white-color);
   font-size: 2em;
   display: inlin-block;
 }
 p {
   font-size: 25px;
 }
+img,
+button {
+  box-shadow: 0px 0px 10px var(--white-color);
+}
+button {
+  border-style: none;
+}
 body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#aa4b6b, #6b6b83, #3b8d99);
+  background: linear-gradient(#8a2387, #e94057, #f27121);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,12 +39,12 @@ body {
 /* Main */
 main {
   background-color: var(--blue-light-color);
-  opacity: 0.5;
+  opacity: 0.8;
   width: 90vw;
   height: 95vh;
   border-radius: 10px;
   display: flex;
-  box-shadow: 0px 0px 20px var(--white-color);
+  box-shadow: 0px 0px 10px var(--white-color);
   overflow: hidden;
 }
 /* Players - 2 sections */
@@ -57,16 +65,19 @@ section {
 }
 /* Winner player */
 .player--winner {
-  background-color: yellow;
+  background: linear-gradient(#8a2387, #e94057, #f27121);
 }
 /* Total scores */
 .score {
   font-size: 4em;
+  color: var(--white-color);
 }
 /* Current scores */
 .current {
   margin: 0 auto;
-  background-color: lightskyblue;
+  box-shadow: 0px 0px 10px var(--white-color);
+
+  background-color: var(--white-color);
   width: 25%;
   height: 20%;
   border-radius: 10px;
@@ -78,13 +89,13 @@ section {
 /* Dice */
 .dice {
   background-color: var(--white-color);
-  border: 1px solid red;
   width: 100px;
   height: 100px;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 10px;
 }
 /* Buttons */
 .btn {

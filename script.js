@@ -51,7 +51,7 @@ btnHold.addEventListener("click", function () {
   scoreArr[activePlayer] += currentScore;
   document.querySelector(`.score-${activePlayer}`).textContent =
     scoreArr[activePlayer];
-  if (scoreArr[activePlayer] >= 100) {
+  if (scoreArr[activePlayer] >= 5) {
     document
       .querySelector(`.player-${activePlayer}`)
       .classList.add("player--winner");
@@ -68,8 +68,8 @@ btnNew.addEventListener("click", function () {
   player1.classList.remove("player--winner");
   player0.classList.add("player--active");
   player1.classList.remove("player--active");
-  btnRoll.classList.toggle("button--inactive");
-  btnHold.classList.toggle("button--inactive");
+  btnRoll.classList.remove("button--inactive");
+  btnHold.classList.remove("button--inactive");
 
   score0El.textContent = 0;
   score1El.textContent = 0;
